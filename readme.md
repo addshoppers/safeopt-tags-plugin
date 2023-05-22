@@ -61,3 +61,13 @@ This is a WordPress plugin that installs the SafeOpt Global Site Tag and Convers
 ![success.png](assets/success.png)
 
 12. Visit your site and in console check if `AddshoppersWidget` object is present
+
+### GitHub Repo Notes
+
+Working files will be saved under the WP directory.  When a new version of the plugin is ready to be released a new zip file must be created using scripts `make_zip_file.sh` or `make_zip_file.py`in the util directory.  
+
+When a new version is release please do the following:
+1. update the version in `safeopt-tags.php`
+2. Replace the current zip file with the new version zip file using provided scripts 
+3. update readme.md with the latests version and any other updates required
+4. update `changelog.md` in util directory
