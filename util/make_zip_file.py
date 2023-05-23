@@ -1,5 +1,6 @@
 import os
 import zipfile
+import hashlib
 
 # Get the directory path of the script
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -25,8 +26,19 @@ with zipfile.ZipFile(zip_path, 'w') as zip_file:
     for file in files_to_zip:
         zip_file.write(file)
 
-# Optional: Verify if the zip file was created successfully
+# Verify if the zip file was created successfully
 if os.path.exists(zip_path):
     print(f"Zip file created successfully: {zip_path}")
 else:
     print("Failed to create the zip file.")
+
+# Read the entire file
+with open(zip_path, 'rb') as file:
+    file_contents = file.read()
+
+# Calculate the MD5 hash
+md5_hash = hashlib.md5(file_contents).hexdigest()
+
+# Print the MD5 hash
+print("Update the zip file hash in the readme.md file")
+print("MD5 hash of {}: {}".format(zip_name, md5_hash))

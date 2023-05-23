@@ -18,9 +18,16 @@ cd "$SOURCE_DIR" || exit 1
 # Create the zip file
 zip -r "$DEST_DIR/$ZIP_NAME" safeopt-tags.php uninstall.php
 
-# Optional: Verify if the zip file was created successfully
+# Verify if the zip file was created successfully
 if [ -f "$DEST_DIR/$ZIP_NAME" ]; then
-  echo "Zip file created successfully: $DEST_DIR/$ZIP_NAME"
+  echo "Zip file created successfully: $ZIP_NAME"
 else
   echo "Failed to create the zip file."
 fi
+
+# get file hash
+md5_hash=$(md5 -q "$DEST_DIR/$ZIP_NAME")
+
+# Print the MD5 hash
+echo "Update the zip file hash in the readme.md file"
+echo "MD5 hash of $ZIP_NAME: $md5_hash"
