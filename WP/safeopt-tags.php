@@ -191,8 +191,7 @@ if (!class_exists('SafetoptTags')){
         }
 
         public function site_id_api_check($id){
-            // TODO: Replace with real API call
-            $url = 'https://mocki.io/v1/4595ab10-d750-4207-b20f-bc633fc8f144';
+            $url = 'https://app.shop.pe/app/site/verify?site=' . $id;
             $api_response = wp_remote_get( $url );
             $body = wp_remote_retrieve_body( $api_response );
             $data = json_decode( $body );
