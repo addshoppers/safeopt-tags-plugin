@@ -6,9 +6,9 @@
 - works with: WordPress sites with WooCommerce
 - install method: upload zip file
 - version: 1.0.0
-- developer: (Addshoppers)[https://www.addshoppers.com/]
+- developer: [Addshoppers](https://www.addshoppers.com/)
 - contact: [help@addshoppers.com](mailto:help@addshoppers.com)
-- MD5 hash of safeopt-tags.zip: 4eff2ede9f7fc0bac16f530bebc1eb91
+- MD5 hash of safeopt-tags.zip: f89bc1bbdfd041a1c59007891244750a
 
 ---
 
