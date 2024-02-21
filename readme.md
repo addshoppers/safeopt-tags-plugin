@@ -21,7 +21,7 @@ This is a WordPress plugin that installs the SafeOpt Global Site Tag and Convers
 
 ### Install Steps
 
-Please visit [SafetOpt Knowledge Base](https://addshoppers.atlassian.net/servicedesk/customer/portal/1/article/2747334658) for the install steps.
+Please visit [SafetOpt Knowledge Base]([https://addshoppers.atlassian.net/servicedesk/customer/portal/1/article/2747334658](https://addshoppers.atlassian.net/wiki/spaces/CS/pages/2727378961/SafeOpt+Help+Articles+and+Topics)) for the install steps.
 
 ### GitHub Repo Notes
 
